@@ -4,7 +4,6 @@ import mongoose from 'mongoose';
 import FormDataModel from './models/FormData.js';
 import { PORT, mongoDBURL } from './config.js';
 
-
 const app = express();
 app.use(express.json());
 app.use(cors());
