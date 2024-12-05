@@ -20,6 +20,7 @@ const Home = () => {
                 headers: { Authorization: `Bearer ${token}` },
             })
             .then((response) => {
+                console.log(response.data);
                 setUser(response.data);
             })
             .catch(() => {
@@ -43,7 +44,7 @@ const Home = () => {
             <h1>
               John Doe <span className="verified">✔</span>
             </h1>
-            <p className="username">{user.email}</p>
+            <p className="username">{user.email}{user.password}{user.firstName}</p>
           </div>
         </div>
       </div>

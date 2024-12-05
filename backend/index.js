@@ -73,7 +73,7 @@ app.post('/register', (req, res)=>{
         }
         else{
             FormDataModel.create(req.body)
-            .then(log_reg_form => res.json(log_reg_form))
+            .then(users => res.json(users))
             .catch(err => res.json(err))
         }
     });

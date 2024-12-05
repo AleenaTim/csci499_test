@@ -1,11 +1,13 @@
 import mongoose from 'mongoose';
 
 const FormDataSchema = new mongoose.Schema({
-  name: String,
+  username: String,
+  firstName: String,
+  lastName: String,
   email: String,
   password: String,
 });
 
-const FormDataModel = mongoose.model('log_reg_form', FormDataSchema);
+const FormDataModel = mongoose.model('users', FormDataSchema);
 
 export default FormDataModel;
